@@ -1,0 +1,90 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BODY GENERAL === */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/images/humo_violeta.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* === NEON TITLE === */
+.neon-title {
+  font-size: 4rem;
+  color: #FFD700; /* dorado */
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; text-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700; }
+  50% { opacity: 0.9; text-shadow: 0 0 25px #FFD700, 0 0 45px #FFD700; }
+  100% { opacity: 1; text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700; }
+}
+
+/* === TAGLINE === */
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* === BUTTON === */
+.cta-btn {
+  margin-top: 2rem;
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+/* === NAVBAR (para cuando lo añadamos) === */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem 2rem;
+  text-align: right;
+  z-index: 100;
+  }
