@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dary Clothes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaryClothes</title>
 
-  <!-- Enlace al CSS -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Vinculación de estilos -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- Fuente moderna y atractiva -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Fuente de Google (opcional, da un toque profesional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">Dary<span>Clothes</span></div>
+    <div class="logo">DaryClothes</div>
     <ul class="nav-links">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Colección</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <button class="menu-toggle">☰</button>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
-  <!-- HERO BANNER -->
-  <section class="hero-banner">
-    <div class="hero-content">
-      <h1>Estilo que inspira, moda que destaca</h1>
-      <p>Explora nuestra nueva colección 2025</p>
-      <button class="info-btn">Ver más</button>
-    </div>
+  <!-- SECCIÓN: INICIO -->
+  <section id="inicio" class="section">
+    <h1>Bienvenido a <span class="highlight">DaryClothes</span></h1>
+    <p>Moda con propósito y visión de futuro ✨</p>
   </section>
 
-  <!-- SECCIÓN DE PRODUCTOS (placeholder) -->
-  <section class="products-preview">
-    <h2>Nuestra Colección</h2>
-    <p>Ropa moderna, cómoda y con identidad. Diseñada para ti.</p>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="assets/images/sample1.jpg" alt="Producto 1" />
-        <h3>Camisa Oversize</h3>
-        <p>$79.900</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/images/sample2.jpg" alt="Producto 2" />
-        <h3>Sudadera Casual</h3>
-        <p>$129.900</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/images/sample3.jpg" alt="Producto 3" />
-        <h3>Chaqueta Urban</h3>
-        <p>$159.900</p>
-      </div>
-    </div>
+  <!-- SECCIÓN: PRODUCTOS -->
+  <section id="productos" class="section alt">
+    <h2>Nuestros Productos</h2>
+    <p>Explora nuestras prendas diseñadas para inspirar y empoderar.</p>
   </section>
 
-  <!-- FOOTER -->
+  <!-- SECCIÓN: CONTACTO -->
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres colaborar? Escríbenos y te responderemos pronto.</p>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
   <footer>
-    <p>© 2025 DaryClothes. Todos los derechos reservados.</p>
-    <p>Diseñado con 💜 por el equipo DaryClothes</p>
+    <p>© 2025 DaryClothes — Desarrollado con amor y visión de un mejor futuro 💛</p>
   </footer>
 
-  <!-- Enlace al JS -->
+  <!-- Script principal -->
   <script src="assets/js/main.js"></script>
 </body>
-  </html>
+</html>
