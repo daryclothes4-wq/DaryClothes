@@ -1,0 +1,60 @@
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .menu-toggle.open {
+    color: rgb(186, 85, 211);
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero-banner {
+    height: 70vh;
+    background-position: center;
+  }
+
+  .banner-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
+  }
+
+  .banner-btn {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}
